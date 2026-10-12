@@ -1,0 +1,22 @@
+{
+  "status": "V1_RELEASE_ENVIRONMENT_CONTRACT",
+  "policy": "Stable v1.0 requires the exact successful reference-run Python/PyTorch/CUDA/cuDNN/GPU plus NumPy/SciPy/pandas versions. Null fields are intentionally filled only from the completed author reference run.",
+  "required_exact": {
+    "ultralytics": "8.4.131"
+  },
+  "freeze_from_successful_reference_run": {
+    "python": "3.10.20",
+    "torch": "2.5.1+cu121",
+    "torch_cuda": "12.1",
+    "cudnn": 90100,
+    "gpu": "NVIDIA RTX A4000",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3"
+  },
+  "scientific_runtime": {
+    "cuda_required_for_checkpoint_closure": true,
+    "master_seed": 2027,
+    "rtdetr_native_loss_rng": "SHA256 uint32 of ConsRestore|Experiment17|Step11RTDETRLossReplay|view=<view_index>"
+  }
+}

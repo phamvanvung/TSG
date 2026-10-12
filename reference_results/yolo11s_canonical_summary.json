@@ -1,0 +1,58 @@
+{
+  "status": "FINAL_TEACHER_CANONICAL_REFERENCE",
+  "reference_only_not_enforced_without_frozen_assets": true,
+  "detector": {
+    "gaussian_development": {
+      "none_macro_map50_95": 0.183919,
+      "clean_kd_macro_map50_95": 0.20766579
+    },
+    "devtest": {
+      "none_macro_map50_95": 0.180557,
+      "clean_kd_macro_map50_95": 0.194197
+    },
+    "acdc": {
+      "none_macro_map50_95": 0.116531,
+      "clean_kd_macro_map50_95": 0.135741
+    }
+  },
+  "canonical_mapped_complement_rescue": {
+    "lost_n": 976,
+    "preserved_n": 7115,
+    "targeted_rescues": 118,
+    "random_rescues": 33
+  },
+  "canonical_local_utility": {
+    "delta_u": 0.01001,
+    "ci95": [0.00591, 0.01434]
+  },
+  "canonical_functional_ablation": {
+    "lost_minus_preserved": 0.07410,
+    "ci95": [0.05321, 0.09676]
+  },
+  "canonical_task_sensitive_geometry": {
+    "C_g_sha256": "e765f903ca3308bb090b6e0985fd14ba7c46151da2cf2c4d7b339faa34a9f64d",
+    "basis_fit_sources": 120,
+    "basis_fit_views": 360,
+    "valid_gradient_vectors": 5631,
+    "bootstrap_reps": 5000,
+    "bootstrap_seed": 2027,
+    "exp15a": {
+      "sources": 120,
+      "views": 360,
+      "ordinary_spearman": 0.17930205222776927,
+      "ordinary_ci95": [0.05051743411142019, 0.2992388328060776],
+      "partial_spearman": 0.20275847464547564,
+      "partial_ci95": [0.06838833140621871, 0.324158179704201]
+    },
+    "exp16a": {
+      "sources": 120,
+      "views": 360,
+      "mapped_complement_partial_spearman": 0.22450703823138388,
+      "mapped_complement_partial_ci95": [0.08902257200651577, 0.34544733733187544],
+      "mapped_complement_ordinary_spearman": 0.216894163,
+      "teacher_residual_partial_spearman": 0.020493227,
+      "teacher_residual_partial_ci95": [-0.125954078, 0.160276781],
+      "conclusion": "MAPPED_COMPLEMENT_ORIENTATION_REPLICATES_BUT_DIRECTION_FAMILY_GENERALIZATION_IS_NOT_SUPPORTED"
+    }
+  }
+}

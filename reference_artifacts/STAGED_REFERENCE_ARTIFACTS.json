@@ -1,0 +1,82 @@
+{
+  "status": "PUBLIC_REFERENCE_ARTIFACTS_STAGED",
+  "excluded": [
+    "BDD100K data",
+    "detector checkpoints"
+  ],
+  "items": {
+    "yolo_R_NT": {
+      "source_name": "R_NT_NONE_TO_TEACHER.npy",
+      "public_path": "reference_artifacts/yolo/R_NT_NONE_TO_TEACHER.npy",
+      "sha256": "2caa1712e6493ca25f5ceb30dfe4d831eb4485e76c51bbf5372571fc0e0e330f",
+      "portable_derivative": false
+    },
+    "yolo_R_ST": {
+      "source_name": "R_ST_CLEAN_KD_TO_TEACHER.npy",
+      "public_path": "reference_artifacts/yolo/R_ST_CLEAN_KD_TO_TEACHER.npy",
+      "sha256": "cebc13623188e0ee6b83410f318a53798bfc8264b52f55237b4558bd76b55cd8",
+      "portable_derivative": false
+    },
+    "yolo_C_g": {
+      "source_name": "EXP15A_TSG_GLOBAL_CG.npy",
+      "public_path": "reference_artifacts/yolo/C_g.npy",
+      "sha256": "e765f903ca3308bb090b6e0985fd14ba7c46151da2cf2c4d7b339faa34a9f64d",
+      "portable_derivative": false
+    },
+    "exp4_random_helper": {
+      "source_name": "07_random_control.py",
+      "public_path": "reference_artifacts/yolo/07_random_control.py",
+      "sha256": "13a4e003942195de0689abb4f2c2bc99a77fcecb6579b5138826322c3c09611f",
+      "portable_derivative": true,
+      "historical_source_sha256": "7aa5b6aa43aa35c90f977413dd7056e1c00b07f58b02629c4af2b9a5fc9861f8",
+      "scientific_callable": "make_random_control_delta",
+      "scientific_callable_ast_sha256": "9f5d01f809cb6c421876eb4b9b65c9b2d1a2f29baa881ba31de8ece78ba76696",
+      "sanitization": {
+        "policy": "known_private_path_literals_only",
+        "replacements": [
+          {
+            "kind": "unix_author_home_prefix",
+            "replacement": "/AUTHOR_HOME/",
+            "count": 3
+          }
+        ]
+      }
+    },
+    "yolo_companion": {
+      "source_name": "consrestore_cacd_native.py",
+      "public_path": "reference_artifacts/companions/consrestore_cacd_native.py",
+      "sha256": "d82f20215ac37848cea810b8e4e5ee7fb169af24ea8819305088fe29490d121b",
+      "portable_derivative": false
+    },
+    "rtdetr_companion": {
+      "source_name": "exp17_rtdetr_clean_kd.py",
+      "public_path": "reference_artifacts/companions/exp17_rtdetr_clean_kd.py",
+      "sha256": "eafb2d02a08977149d24486755a2a4d43a9c0359f3a8a8b840ce5a8882aa471e",
+      "portable_derivative": false
+    },
+    "rtdetr_step10_bridge": {
+      "source_name": "RTDETR_NONE_TO_CLEAN_KD_P4_ORTHOGONAL_BRIDGE.npy",
+      "public_path": "reference_artifacts/rtdetr/RTDETR_NONE_TO_CLEAN_KD_P4_ORTHOGONAL_BRIDGE.npy",
+      "sha256": "bf9f8f683f0d92a21d0f5a09127dc03d0547cff622446c39975cd6cca9b4eb60",
+      "portable_derivative": false
+    },
+    "yolo_none_args_yaml": {
+      "source_name": "args.yaml",
+      "public_path": "reference_artifacts/yolo/NONE_args.yaml",
+      "sha256": "78e403fc4bc57ba48cc1f63d4654f311238cbed98b6852aca8382e68cd615333",
+      "portable_derivative": true,
+      "historical_source_sha256": "7c221276dd53c46435b0126ea305b1bd396d9013848d80a68bb23dc33d47d634",
+      "sanitization": {
+        "policy": "exact_known_private_path_prefix_replacement_only",
+        "non_path_bytes_changed": false,
+        "replacements": [
+          {
+            "kind": "unix_author_home_prefix",
+            "replacement": "/AUTHOR_HOME/",
+            "count": 4
+          }
+        ]
+      }
+    }
+  }
+}

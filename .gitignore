@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+env/
+results/
+configs/paths.json
+*.pt
+*.pth
+*.onnx
+*.engine
+*.npy
+*.npz
+!reference_results/**
+# Stable public release intentionally bundles small author-generated replay arrays.
+!reference_artifacts/**/*.npy
+
+configs/environment.requirements.json.pre_freeze

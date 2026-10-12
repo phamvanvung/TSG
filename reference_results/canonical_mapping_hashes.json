@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_PRIVATE_REFERENCE",
+  "note": "Hashes below identify the frozen teacher-canonical YOLO mapping artifacts used in the canonical audit. The audit JSON hash is only expected to match the original frozen artifact, not a regenerated JSON with different formatting or provenance fields. RT-DETR subsection is reconciled to the successful public checkpoint reference run.",
+  "sha256": {
+    "R_NT_NONE_TO_TEACHER.npy": "2caa1712e6493ca25f5ceb30dfe4d831eb4485e76c51bbf5372571fc0e0e330f",
+    "R_ST_CLEAN_KD_TO_TEACHER.npy": "cebc13623188e0ee6b83410f318a53798bfc8264b52f55237b4558bd76b55cd8",
+    "TEACHER_CANONICAL_COORDINATE_AUDIT.json": "c0d482d24ce835e8518142ea68bc6b53beea0255c6fab5f3662dbb013911f3dc"
+  },
+  "identity_distance": {
+    "R_NT": 0.919429373,
+    "R_ST": 0.051762915
+  },
+  "rtdetr_l_teacher_canonical": {
+    "R_NT_NONE_TO_TEACHER.npy": "ddc6947c6f6ff9e62ad3790fba38b93f114824899ae5fbc8e81dbe0c85b2ca61",
+    "R_ST_CLEAN_KD_TO_TEACHER.npy": "6c1e44b533db580284a32b4933713edd407521bacbd334d2716bf4a35b00128b",
+    "fit_vectors_per_map": 576000,
+    "identity_distance_R_NT": 0.38071125598915717,
+    "identity_distance_R_ST": 0.17231531676627956
+  }
+}

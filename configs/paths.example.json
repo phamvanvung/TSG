@@ -1,0 +1,33 @@
+{
+  "data": {
+    "bdd100k_root": "/ABSOLUTE/PATH/TO/BDD100K",
+    "gaussian_manifest": "/ABSOLUTE/PATH/TO/gaussian_train_val_views.csv",
+    "yolo_none_args_yaml": "../reference_artifacts/yolo/NONE_args.yaml",
+    "object_cohort": "../results/yolo_object_cohort/FROZEN_OBJECT_COHORT.csv",
+    "yolo_tsg_basis_manifest": "/ABSOLUTE/PATH/TO/EXP15A_TSG_BASIS_FIT_GAUSSIAN_MANIFEST.csv",
+    "yolo_tsg_confirm_manifest": "/ABSOLUTE/PATH/TO/EXP15A_TSG_CONFIRM_GAUSSIAN_MANIFEST.csv",
+    "yolo_tsog_confirm_manifest": "/ABSOLUTE/PATH/TO/EXP16A_TSOG_CONFIRM_GAUSSIAN_MANIFEST.csv",
+    "rtdetr_geometry_fit_manifest": "/ABSOLUTE/PATH/TO/JOURNAL_GEOMETRY_FIT_GAUSSIAN_MANIFEST.csv",
+    "rtdetr_confirm_manifest": "/ABSOLUTE/PATH/TO/JOURNAL_CONFIRM_GAUSSIAN_MANIFEST.csv",
+    "fit_features_npz": "/OPTIONAL/PATH/TO/FIT_TEACHER_CANONICAL_FEATURES.npz",
+    "fit_metadata_json": "/OPTIONAL/PATH/TO/FIT_TEACHER_CANONICAL_METADATA.json"
+  },
+  "checkpoints": {
+    "yolo11s_none": "/ABSOLUTE/PATH/TO/yolo11s_none_best.pt",
+    "yolo11s_clean_kd": "/ABSOLUTE/PATH/TO/yolo11s_clean_kd_best.pt",
+    "yolo11s_clean_teacher": "/ABSOLUTE/PATH/TO/yolo11s_clean_teacher_best.pt",
+    "yolo_checkpoint_companion": "../reference_artifacts/companions/consrestore_cacd_native.py",
+    "rtdetr_l_none": "/ABSOLUTE/PATH/TO/rtdetr_l_none_best.pt",
+    "rtdetr_l_clean_kd": "/ABSOLUTE/PATH/TO/rtdetr_l_clean_kd_best.pt",
+    "rtdetr_l_clean_teacher": "/ABSOLUTE/PATH/TO/rtdetr_l_clean_teacher_best.pt",
+    "rtdetr_checkpoint_companion": "../reference_artifacts/companions/exp17_rtdetr_clean_kd.py"
+  },
+  "artifacts": {
+    "canonical_map_dir": "../reference_artifacts/yolo",
+    "yolo_task_geometry": "../reference_artifacts/yolo/C_g.npy",
+    "exp4_step07_helper": "../reference_artifacts/yolo/07_random_control.py",
+    "rtdetr_canonical_map_dir": "../results/rtdetr_teacher_canonical_coordinate_audit",
+    "rtdetr_task_geometry": "../results/rtdetr_task_geometry/C_g.npy",
+    "rtdetr_step10_bridge": "../reference_artifacts/rtdetr/RTDETR_NONE_TO_CLEAN_KD_P4_ORTHOGONAL_BRIDGE.npy"
+  }
+}

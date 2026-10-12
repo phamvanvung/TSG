@@ -1,0 +1,83 @@
+{
+  "release": "v1.0.0-rc2-public-candidate",
+  "status": "SUCCESSFUL_REFERENCE_RUN_TARGETS",
+  "reference_run_date": "2026-10-03",
+  "policy": "These targets are frozen from the successful checkpoint-level reference execution after rc1 implementation fixes and reconciliation with the authoritative corrected Step-14 protocol. Stable v1.0 additionally requires a completed exact environment lock.",
+  "yolo11s": {
+    "authoritative_downstream_artifacts": {
+      "teacher_canonical_R_NT_sha256": "2caa1712e6493ca25f5ceb30dfe4d831eb4485e76c51bbf5372571fc0e0e330f",
+      "teacher_canonical_R_ST_sha256": "cebc13623188e0ee6b83410f318a53798bfc8264b52f55237b4558bd76b55cd8",
+      "task_geometry_sha256": "e765f903ca3308bb090b6e0985fd14ba7c46151da2cf2c4d7b339faa34a9f64d"
+    },
+    "rebuild_audit": {
+      "task_geometry_sha256_on_reference_machine": "07650dc289685a7670c25ea649d1be2eff7c1d2b63c82d20a8bd6a9fb7a4b99b",
+      "policy": "Freshly rebuilt YOLO geometry is an audit artifact. Confirmatory Exp15A/16A use the frozen authoritative maps/C_g above; the public release must not silently substitute the rebuild artifact."
+    },
+    "canonical_random_control": {
+      "targeted_lost_rescued": 118,
+      "random_lost_rescued": 33,
+      "targeted_preserved_harmed": 39,
+      "random_preserved_harmed": 35,
+      "delta_utility_point": 0.010011123470522803,
+      "ci95": [0.005907613065326634, 0.01434108290986495],
+      "gate_pass": true
+    },
+    "exp15a": {
+      "ordinary_spearman": 0.17934912049218485,
+      "ordinary_ci95": [0.05061489412386233, 0.2997774594687043],
+      "partial_spearman": 0.20286715721566048,
+      "partial_ci95": [0.06846454603898183, 0.3242335352171452],
+      "pass": true
+    },
+    "exp16a": {
+      "mapped_complement_partial_spearman": 0.22462690347053862,
+      "mapped_complement_partial_ci95": [0.08914169003564316, 0.3455153968924902],
+      "teacher_residual_partial_spearman": 0.02041092988043215,
+      "teacher_residual_partial_ci95": [-0.12599376004130342, 0.16022997987180754],
+      "conclusion": "MAPPED_COMPLEMENT_ORIENTATION_REPLICATES_BUT_DIRECTION_FAMILY_GENERALIZATION_IS_NOT_SUPPORTED"
+    }
+  },
+  "rtdetr_l": {
+    "historical_step10_bridge_sha256": "bf9f8f683f0d92a21d0f5a09127dc03d0547cff622446c39975cd6cca9b4eb60",
+    "gaussian_val_detection": {
+      "none_macro": 0.234487996,
+      "clean_kd_macro": 0.250636082,
+      "delta_macro": 0.016148086,
+      "delta_per_sigma": {
+        "15": 0.020303,
+        "25": 0.016249,
+        "50": 0.011892
+      },
+      "ci95": [-0.004753495, 0.038906672],
+      "conclusion": "CLEAN_KD_POSITIVE_ON_RTDETR_BUT_PAIRED_SOURCE_CI_INCLUDES_ZERO"
+    },
+    "teacher_canonical_R_NT_sha256": "ddc6947c6f6ff9e62ad3790fba38b93f114824899ae5fbc8e81dbe0c85b2ca61",
+    "teacher_canonical_R_ST_sha256": "6c1e44b533db580284a32b4933713edd407521bacbd334d2716bf4a35b00128b",
+    "task_geometry_sha256": "c99fbc818277cbb7cdb0e66fc9fbd8851ef83bbde2fbb66a24f5d704b6b6c52e",
+    "step12_local_utility": {
+      "gate_A_point": 0.6745237707363628,
+      "gate_A_ci95": [0.6493323572827646, 0.6980144423249719],
+      "gate_B_point": 0.012397448379827727,
+      "gate_B_ci95": [0.010506531712676596, 0.014434130662521628],
+      "gate_A_pass": true,
+      "gate_B_pass": true,
+      "conclusion": "RTDETR_MAPPED_COMPLEMENT_LOCAL_UTILITY_REPLICATES"
+    },
+    "step14_finite_horizon": {
+      "rho_small_source_balanced": 0.5429078235502545,
+      "rho_large_source_balanced": 0.16597366522366522,
+      "delta_rho_point": 0.3769341583265893,
+      "ci95": [0.316999866536965, 0.4379358642467023],
+      "pass": true,
+      "conclusion": "RTDETR_FINITE_INTERVENTION_HORIZON_REPLICATES",
+      "authoritative_protocol_note": "Uses frozen Step-12 u_C as primary predictor; recomputed u_C/u_rel are diagnostics only; final correlations are centrally recomputed from frozen u_C plus exact alpha=0.25/4 outcomes."
+    },
+    "canonical_orientation": {
+      "partial_spearman": 0.23885827835422602,
+      "ci95": [0.1554155334753086, 0.3252397790213449],
+      "ordinary_spearman": 0.2313651213299238,
+      "ordinary_ci95": [0.14597774922935286, 0.32170782329952863],
+      "pass": true
+    }
+  }
+}

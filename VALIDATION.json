@@ -1,0 +1,63 @@
+{
+  "release": "v1.0.0",
+  "status": "FULL_CHECKPOINT_REPRODUCTION_PASS",
+  "source_validation": {
+    "compileall": "PASS",
+    "pytest": {
+      "status": "PASS",
+      "passed": 22,
+      "failed": 0
+    },
+    "numerical_self_check": {
+      "status": "PASS",
+      "synthetic_none_to_teacher_fit_error": 2.2330985402231496e-15,
+      "synthetic_student_to_teacher_fit_error": 2.133756910108028e-15,
+      "geometry_trace": 1.0,
+      "orientation_scores_finite": true
+    },
+    "scientific_contract_audit": {
+      "status": "PASS",
+      "historical_projection_isolated_to_step12_14": true,
+      "canonical_orientation_uses_R_NT_R_ST": true,
+      "step14_primary_predictor": "frozen_u_C",
+      "step12_constant_spearman": "0.0",
+      "step14_constant_spearman": "NaN"
+    },
+    "cli_help_smoke": {
+      "status": "PASS",
+      "entry_points_checked": 31
+    },
+    "private_author_home_path_scan": "PASS"
+  },
+  "reference_execution_evidence": {
+    "yolo_checkpoint_chain_through_exp16a": "COMPLETED_ON_AUTHOR_REPRODUCTION_MACHINE",
+    "rtdetr_checkpoint_chain_through_orientation": "COMPLETED_ON_AUTHOR_REPRODUCTION_MACHINE",
+    "rtdetr_step12_gate_A": 0.6745237707363628,
+    "rtdetr_step12_gate_B": 0.012397448379827727,
+    "rtdetr_step14_delta_rho": 0.3769341583265893,
+    "rtdetr_orientation_partial_spearman": 0.23885827835422602,
+    "note": "These values are frozen in reference_results/v1.0_rc2_reference_targets.json after reconciliation with the corrected authoritative Step-14 protocol."
+  },
+  "stable_v1_gate": "SATISFIED: public reference artifacts were staged; the successful exact environment was frozen; scripts/verify_end_to_end.py emitted FULL_CHECKPOINT_REPRODUCTION_PASS.",
+  "stable_v1_closure": {
+    "scientific_targets_pass": true,
+    "environment_contract_complete": true,
+    "environment_report_pass": true,
+    "public_reference_artifacts_staged": true,
+    "unit_tests_pass": "27/27",
+    "scientific_contract_audit_pass": true,
+    "step12_step14_semantic_linkage_pass": true,
+    "final_status": "FULL_CHECKPOINT_REPRODUCTION_PASS"
+  },
+  "successful_reference_environment": {
+    "python": "3.10.20",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "torch": "2.5.1+cu121",
+    "torch_cuda": "12.1",
+    "cudnn": 90100,
+    "gpu": "NVIDIA RTX A4000",
+    "ultralytics": "8.4.131"
+  }
+}

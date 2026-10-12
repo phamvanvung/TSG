@@ -1,0 +1,11 @@
+{
+  "status": "FROZEN_REFERENCE",
+  "sha256": {
+    "clean_teacher_best.pt": "2a05cfd508005899ecadf79b7f9c1cdb7b3d094839f05e0d9064da7985e2e267",
+    "none_best.pt": "a3aae60acae00e4fc39d8a906d3427dcfa49859742f52421540ec86852432140",
+    "clean_kd_best.pt": "54cc482abfa92a18a2a701e8b94e42e1394b0f6026491abea1cb219a7195d155",
+    "gaussian_train_val_manifest.csv": "a7dce182334abdfa12c63ffaa016a9c2697e28fdd531c518e062493bfa6ad38a",
+    "gaussian_dataset_signature": "e7a855488e7402f29b6cb70c19c6711b8a47e1fc26ea1c0b195bba3df044e60b",
+    "checkpoint_companion": "d82f20215ac37848cea810b8e4e5ee7fb169af24ea8819305088fe29490d121b"
+  }
+}

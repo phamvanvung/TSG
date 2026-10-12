@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_REFERENCE_RC2",
+  "sha256": {
+    "clean_teacher_best.pt": "70a70aa2fc0df8a2b2e489ba677f3dc97d8ee82f81898bc933f5ab3ab6d68f37",
+    "none_best.pt": "ed523066ca09bb9d083ecc3eb78168973671e2e010af9eca5b3d0e45c35d2059",
+    "clean_kd_best.pt": "fe59f4175c2e44b1f4fc3ff3bfd49f0032a26c6e69084c88ffd3a7a74ff511f5",
+    "checkpoint_companion": "eafb2d02a08977149d24486755a2a4d43a9c0359f3a8a8b840ce5a8882aa471e",
+    "canonical_R_NT": "ddc6947c6f6ff9e62ad3790fba38b93f114824899ae5fbc8e81dbe0c85b2ca61",
+    "canonical_R_ST": "6c1e44b533db580284a32b4933713edd407521bacbd334d2716bf4a35b00128b",
+    "task_geometry_C_g": "c99fbc818277cbb7cdb0e66fc9fbd8851ef83bbde2fbb66a24f5d704b6b6c52e",
+    "historical_none_to_clean_kd_bridge": "bf9f8f683f0d92a21d0f5a09127dc03d0547cff622446c39975cd6cca9b4eb60",
+    "geometry_fit_gaussian_view_manifest": "b9278a12d82dc96202e18442ccfa3ac0e128436e2852a3e981554b1f3b66fac1"
+  },
+  "notes": {
+    "canonical_map_fit": "120 JOURNAL_GEOMETRY_FIT sources x 3 Gaussian severities; module-24 P4; 576000 cell vectors per map",
+    "task_geometry": "C_g fit on 120 sources / 360 views with 5769 valid normalized task-gradient vectors",
+    "historical_bridge": "Required for exact frozen Step-12/14 reproduction; teacher-canonical R_NT/R_ST are used separately for final orientation.",
+    "rc2_reconciliation": "Derived map/C_g hashes frozen from successful public checkpoint reference execution; see docs/RC2_RECONCILIATION.md."
+  }
+}

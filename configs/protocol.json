@@ -1,0 +1,46 @@
+{
+  "protocol_version": "teacher-canonical-v1",
+  "seed": 2027,
+  "bootstrap_reps": 5000,
+  "image_size": 640,
+  "sigmas": [
+    15,
+    25,
+    50
+  ],
+  "channels": 256,
+  "coordinate_convention": {
+    "vectors": "row",
+    "R_NT": "NONE -> teacher; N_T = N @ R_NT",
+    "R_ST": "CLEAN-KD -> teacher; S_T = S @ R_ST",
+    "R_TS": "teacher -> CLEAN-KD; R_TS = R_ST.T"
+  },
+  "yolo11s": {
+    "ultralytics_version": "8.4.131",
+    "p4_module": 19,
+    "p4_hw": [
+      40,
+      40
+    ],
+    "experiment4_projection": "flattened-region",
+    "head_support_radius": 2,
+    "task_geometry_projection": "per-cell"
+  },
+  "rtdetr_l": {
+    "p4_module": 24,
+    "p4_hw": [
+      40,
+      40
+    ],
+    "task_geometry_projection": "per-cell",
+    "historical_local_utility_bridge": "NONE -> CLEAN-KD, uncentered orthogonal Procrustes, used only for frozen Step-12/14 chain",
+    "teacher_canonical_orientation": "R_NT/R_ST teacher-canonical correction, used for final orientation geometry"
+  },
+  "firewall": {
+    "map_fit_uses_val": false,
+    "map_fit_uses_pres_lost_labels": false,
+    "retraining_in_public_reproduction": false,
+    "threshold_tuning_in_public_reproduction": false,
+    "visualization_generation_in_public_reproduction": false
+  }
+}

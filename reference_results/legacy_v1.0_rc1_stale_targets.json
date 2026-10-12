@@ -1,0 +1,52 @@
+{
+  "release": "v1.0.0-rc1-end-to-end",
+  "status": "FROZEN_NUMERICAL_TARGETS",
+  "policy": "These values are comparison targets only. Stable v1.0 requires successful checkpoint execution plus a completed exact environment lock.",
+  "yolo11s": {
+    "canonical_random_control": {
+      "targeted_lost_rescued": 118,
+      "random_lost_rescued": 33,
+      "delta_utility_point": 0.01001,
+      "gate_pass": true
+    },
+    "task_geometry_sha256": "e765f903ca3308bb090b6e0985fd14ba7c46151da2cf2c4d7b339faa34a9f64d",
+    "exp15a": {
+      "ordinary_spearman": 0.17930205222776927,
+      "ordinary_ci95": [0.05051743411142019, 0.2992388328060776],
+      "partial_spearman": 0.20275847464547564,
+      "partial_ci95": [0.06838833140621871, 0.324158179704201]
+    },
+    "exp16a": {
+      "mapped_complement_partial_spearman": 0.22450703823138388,
+      "mapped_complement_partial_ci95": [0.08902257200651577, 0.34544733733187544],
+      "teacher_residual_partial_spearman": 0.020493227,
+      "teacher_residual_partial_ci95": [-0.125954078, 0.160276781]
+    }
+  },
+  "rtdetr_l": {
+    "historical_step10_bridge_sha256": "bf9f8f683f0d92a21d0f5a09127dc03d0547cff622446c39975cd6cca9b4eb60",
+    "teacher_canonical_R_NT_sha256": "051ef7c5145cad59ceaf56f4cbbc540b6e6ff82ce4799b06117ee7d5d465c842",
+    "teacher_canonical_R_ST_sha256": "63fc4364fd403d76f8c43dc067783d624ebfea32b0a4070f220e5656c0c7c675",
+    "task_geometry_sha256": "b5584a05a9f19d060a2a40fd4f4606add6fe3dd178a44b7c8837d53adaff41be",
+    "step12_local_utility": {
+      "gate_A_point": 0.674523771,
+      "gate_B_point": 0.0123974483798,
+      "gate_A_pass": true,
+      "gate_B_pass": true,
+      "conclusion": "RTDETR_MAPPED_COMPLEMENT_LOCAL_UTILITY_REPLICATES"
+    },
+    "step14_finite_horizon": {
+      "rho_small_source_balanced": 0.521483026,
+      "rho_large_source_balanced": 0.11913961,
+      "delta_rho_point": 0.402343415,
+      "ci95": [0.33720435645098695, 0.4675703608963976],
+      "pass": true,
+      "conclusion": "RTDETR_FINITE_INTERVENTION_HORIZON_REPLICATES"
+    },
+    "canonical_orientation": {
+      "partial_spearman": 0.23870932864922548,
+      "ci95": [0.15498683950339306, 0.3251284622868574],
+      "pass": true
+    }
+  }
+}

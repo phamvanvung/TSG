@@ -1,0 +1,53 @@
+{
+  "status": "FINAL_RC2_SUCCESSFUL_REFERENCE",
+  "reference_only_not_enforced_without_frozen_assets": true,
+  "detector": {
+    "none_macro_map50_95": 0.234487996,
+    "clean_kd_macro_map50_95": 0.250636082,
+    "delta": 0.016148086,
+    "paired_source_bootstrap_ci95": [
+      -0.004753495,
+      0.038906672
+    ]
+  },
+  "teacher_canonical_maps": {
+    "fit_sources": 120,
+    "fit_views": 360,
+    "fit_vectors_per_map": 576000,
+    "R_NT_sha256": "ddc6947c6f6ff9e62ad3790fba38b93f114824899ae5fbc8e81dbe0c85b2ca61",
+    "R_ST_sha256": "6c1e44b533db580284a32b4933713edd407521bacbd334d2716bf4a35b00128b",
+    "R_NT_identity_distance": 0.38071125598915717,
+    "R_ST_identity_distance": 0.17231531676627956
+  },
+  "task_sensitive_geometry": {
+    "C_g_sha256": "c99fbc818277cbb7cdb0e66fc9fbd8851ef83bbde2fbb66a24f5d704b6b6c52e",
+    "fit_sources": 120,
+    "fit_views": 360,
+    "eligible_views": 360,
+    "valid_gradient_vectors": 5769
+  },
+  "canonical_orientation_confirmation": {
+    "sources": 200,
+    "views": 600,
+    "partial_spearman": 0.23885827835422602,
+    "ci95": [
+      0.1554155334753086,
+      0.3252397790213449
+    ],
+    "pass": true
+  },
+  "finite_horizon": {
+    "reproduction_level_v0_9": "artifact-level verifier",
+    "rho_small": 0.5429078235502545,
+    "rho_large": 0.16597366522366522,
+    "delta_rho": 0.3769341583265893,
+    "ci95": [
+      0.316999866536965,
+      0.4379358642467023
+    ],
+    "note": "rc2 target follows the corrected authoritative Step-14 replay: frozen Step-12 u_C primary predictor; recomputed scores diagnostic only.",
+    "reproduction_level_v1_0_rc1": "checkpoint-level runner migrated",
+    "reproduction_level_v1_0_rc2": "checkpoint-level successful reference execution"
+  },
+  "rc2_note": "Reconciled to successful public checkpoint reference execution; stale rc1 values retained separately for audit."
+}
